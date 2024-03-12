@@ -14,17 +14,13 @@ export const Navitation = () => {
 
   return (
     <header className={style["navbar"]}>
-      {/* <Link to="/">
+      <Link to="/">
         <img
-          src="src/assets/Macstore ltd.png"
-          alt=""
           className={style["header-logo"]}
+          src="/src/assets/images/logo.png"
+          alt=""
         />
-      </Link> */}
-      <div className={style["vertical-line"]}></div>
-      <div className={style["header-logo-right"]}>
-        <img src="src/assets/mac.png" alt="" />
-      </div>
+      </Link>
       <nav className={style["navbar__nav"]}>
         <div className={style["navbar__products"]}>
           <ul className={style["navbar__products-ul"]}>
