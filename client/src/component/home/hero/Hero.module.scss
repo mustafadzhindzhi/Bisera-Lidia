@@ -1,10 +1,12 @@
+@import '../../../styling-properties.scss';
+
 .hero {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: rgba(170, 34, 34, 0.07);
+    background:$main-background-color;
     width: 100%;
 
     &__image-1,
@@ -106,8 +108,8 @@
             cursor: pointer;
             font-size: 20px;
             border-radius: 20px;
-            background-color: #c61919;
-            color: white;
+            background-color: $background-button-color;
+            color: $white-text-color;
             transition: background-color 0.3s, transform 0.3s;
 
             &:hover {

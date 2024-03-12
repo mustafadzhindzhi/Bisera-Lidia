@@ -1,3 +1,5 @@
+@import '../../styling-properties.scss';
+
 header{
   padding: 0;
 }
@@ -11,7 +13,6 @@ header{
   position: sticky;
   max-height: 60px;
   z-index: 999;
-  width: 100%;
   right: 0;
   left: 0;
 
@@ -87,14 +88,14 @@ header{
   width: 9rem;
   height: 2.3rem;
   padding: 10px;
-  background: #c61919;
+  background: $background-button-color;
   border: none;
   border-radius: 5px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $white-text-color;
   font-size: 17px;
   margin-right: 3rem;
   margin-left: 1rem;
@@ -241,7 +242,7 @@ header{
 
   .app__navbar-smallscreen_links li a {
     font-size: 19px;
-    color: white;
+    color: $white-text-color;
     text-decoration: none;
   }
 
