@@ -1,0 +1,37 @@
+.scrolling-text {
+    position: fixed;
+    top: 50%;
+    left: 50%; /* Center the element horizontally */
+    transform: translate(-50%, -50%); /* Center the element vertically */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .scrolling-text.down {
+    animation: slideInFromLeft 2s ease-in-out forwards;
+  }
+  
+  .scrolling-text.up {
+    animation: slideOutToLeft 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
