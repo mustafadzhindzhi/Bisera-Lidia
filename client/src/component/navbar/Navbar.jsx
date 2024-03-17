@@ -13,6 +13,7 @@ export const Navitation = () => {
   };
 
   return (
+    <>
     <header className={style["navbar"]}>
       <Link to="/">
         <img
@@ -97,6 +98,8 @@ export const Navitation = () => {
         )}
       </div>
     </header>
+    <div class="overlay"></div>
+    </>
   );
 };
 
