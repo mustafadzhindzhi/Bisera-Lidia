@@ -98,7 +98,7 @@ export const Navitation = () => {
         )}
       </div>
     </header>
-    <div class="overlay"></div>
+    <div className="overlay"></div>
     </>
   );
 };
