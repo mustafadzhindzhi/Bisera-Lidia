@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import './ScrollingText.css'; // Import the CSS file for styling
 
 const ScrollingText = () => {
-  const [scrollDirection, setScrollDirection] = useState('down');
+  const [showText, setShowText] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop > 0 && scrollTop < window.innerHeight) {
-        setScrollDirection('down');
-      } else if (scrollTop >= window.innerHeight) {
-        setScrollDirection('up');
+      if (scrollTop > window.innerHeight * 0.5) {
+        setShowText(true);
+      } else {
+        setShowText(false);
       }
     };
 
@@ -23,14 +23,12 @@ const ScrollingText = () => {
   }, []);
 
   return (
-    <div className={`scrolling-text ${scrollDirection}`}>
-        
-      <p>Дует<br /> Бисера и Лидия <br />
-      +359 88 994 3359 +359 88 849 5500
-
-bisera.lidia@gmail.com
-
-</p>
+    <div className="scrolling-text">
+      <div className={`background-image ${showText ? 'show-text' : ''}`} />
+      <div className="text-container">
+        {showText && <p className="scrolling-text-content">Бисера и Лидия</p>}
+      </div>
+      <div className="white-background"></div> {/* White background to enable scrolling */}
     </div>
   );
 };
