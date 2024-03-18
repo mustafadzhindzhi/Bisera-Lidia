@@ -1,6 +1,7 @@
 import Navigation from "./component/navbar/Navbar.jsx";
 import Hero from "./component/home/hero/Hero.jsx";
-import Info from "./component/home/hero/info/Info.jsx";
+import InfoOne from "./component/home/hero/info/info-section-one/InfoOne.jsx";
+import InfoTwo from "./component/home/hero/info/info-section-two/InfoTwo.jsx";
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <div>
       <Navigation />
       <Hero />
-      <Info />
+      <InfoOne />
+      <InfoTwo />
     </div>
   )
 }
