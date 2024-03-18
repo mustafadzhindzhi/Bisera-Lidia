@@ -4,9 +4,9 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: rgba(170, 34, 34, 0.07);
+    background: rgba(94, 42, 42, 0.555);
     width: 100%;
-
+   
     &__image-1,
     &__image-2 {
         position: absolute;
@@ -64,7 +64,7 @@
     }
 
     &__image-1 {
-        top: 5%;
+        top: 35%;
         left: 3%;
         animation: slideInLeft 2s forwards ease-in-out;
     }
