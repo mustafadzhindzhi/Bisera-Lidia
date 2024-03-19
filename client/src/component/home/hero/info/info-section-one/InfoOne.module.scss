@@ -69,7 +69,7 @@
     .info__text {
         display: flex;
         flex-direction: column;
-        width: 30.663%;
+        width: 31%;
         flex-wrap: wrap;
 
         h2 {
@@ -80,6 +80,10 @@
         p {
             font-size: 1.5rem;
             font-weight: 400;
+            text-align: justify;
+            word-spacing: 0px;
+            line-height: 1.3;
+            
         }
     }
 
