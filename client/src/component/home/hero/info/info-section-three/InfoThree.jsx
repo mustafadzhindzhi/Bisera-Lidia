@@ -5,7 +5,10 @@ import style from './InfoThree.module.scss';
 
 const InfoThree = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const handleButtonClick = () => {
+    // Redirect to the desired URL
+    window.location.href = "https://example.com"; // Replace "https://example.com" with your desired URL
+  };
   const articles = [
     {
       image: "/src/assets/images/285B0721-1129-4224-B3FB-AF7C22940654.jpeg",
@@ -40,7 +43,9 @@ const InfoThree = () => {
 
   return (
     <>
+ 
       <div className={style["news"]}>
+      <h1 className={style.heading}>Важни и интересни новини свързани с нас</h1>
         <section className={style.articles}>
           {articles.slice(currentIndex, currentIndex + 3).map((article, index) => (
             <article key={currentIndex + index} className={style.article}>
@@ -51,12 +56,10 @@ const InfoThree = () => {
                 <div className={style["article-body"]}>
                   <h2>{article.title}</h2>
                   <p>{article.content}</p>
-                  <a href="#" className={style["read-more"]}>
-                    Прочети Повече <span className="sr-only"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className={style.icon} viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
+                  <button className={style["button"]} onClick={handleButtonClick}>
+        <span className={style["button-text"]}>Прочети Повече</span>
+        <div className={style["fill-container"]}></div>
+      </button>
                 </div>
               </div>
             </article>

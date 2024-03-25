@@ -41,8 +41,8 @@ export const Navitation = () => {
                   {item === "Творчество" && (
                     <div className={style["extra-items"]}>
                       <ul>
-                        <li>Extra 1</li>
-                        <li>Extra 2</li>
+                        <li>Традиционен фолклор</li>
+                        <li>Модерен фолклор</li>
                       </ul>
                     </div>
                   )}
