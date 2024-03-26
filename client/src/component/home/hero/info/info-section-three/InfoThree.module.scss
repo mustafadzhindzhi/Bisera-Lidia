@@ -207,3 +207,58 @@
   }
 
 
+  .prevButton {
+    position: absolute;
+    left: 0; /* Position on the left */
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nextButton {
+    position: absolute;
+    right: 0; /* Position on the right */
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #0056b3; /* Example hover background color */
+  }.prevButton {
+    position: absolute;
+    left: 0; /* Position on the left */
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nextButton {
+    position: absolute;
+    right: 0; /* Position on the right */
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #0056b3; /* Example hover background color */
+  }
