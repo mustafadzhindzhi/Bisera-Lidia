@@ -1,0 +1,36 @@
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 999;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red; /* Change to your desired color */
+    padding: 20px; /* Increase the padding to make the circle bigger */
+    transition: all 0.35s ease;
+  }
+  
+  .circle .icon {
+    font-size: 24px; /* Adjust the font size as desired */
+    color: white; /* Change to your desired color */
+  }
+  
+  
+  .icon {
+    color: white; /* Change to your desired color */
+  }
+  
